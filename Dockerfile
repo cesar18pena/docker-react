@@ -2,7 +2,7 @@ FROM node:10.16-alpine as builder
 
 WORKDIR '/usr/app'
 
-COPY package.son .
+COPY package*.json ./
 
 RUN npm install
 
